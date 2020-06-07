@@ -16,7 +16,6 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
   kafdrop:
     image: obsidiandynamics/kafdrop
-    restart: "no"
     ports:
       - "9000:9000"
     environment:
