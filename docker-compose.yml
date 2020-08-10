@@ -5,7 +5,7 @@ services:
     ports:
       - "2181:2181"
   kafka:
-    image: wurstmeister/kafka:2.12-2.4.1
+    image: wurstmeister/kafka:2.12-2.5.0
     ports:
       - "9092:9092"
     environment:
@@ -15,7 +15,7 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: "INTERNAL"
       KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
   kafdrop:
-    image: obsidiandynamics/kafdrop
+    image: obsidiandynamics/kafdrop:3.27.0
     ports:
       - "9000:9000"
     environment:
