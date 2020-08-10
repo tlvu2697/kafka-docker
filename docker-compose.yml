@@ -15,7 +15,7 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: "INTERNAL"
       KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
   kafdrop:
-    image: obsidiandynamics/kafdrop:3.27.0
+    image: obsidiandynamics/kafdrop:latest
     ports:
       - "9000:9000"
     environment:
