@@ -15,7 +15,7 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: "INTERNAL"
       KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
       KAFKA_MESSAGE_MAX_BYTES: "5242880"
-      BROKER_ID_COMMAND: "awk -v min=1 -v max=1000 'BEGIN{srand(); print int(min+rand()*(max-min+1))}'"
+      #BROKER_ID_COMMAND: "awk -v min=1 -v max=1000 'BEGIN{srand(); print int(min+rand()*(max-min+1))}'"
   kafdrop:
     image: obsidiandynamics/kafdrop:latest
     ports:
