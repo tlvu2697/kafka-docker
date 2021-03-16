@@ -1,2 +1,2 @@
 #!/bin/sh
-docker-compose up --no-recreate
+docker-compose up --force-recreate
